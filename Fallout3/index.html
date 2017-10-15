@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Fallout 3 G.O.A.T.</title>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+
+<div class = "container-fluid testContainer" id = "intro" style = "display: block">
+  <h1 class = "question">Welcome Vault Dweller</h1>
+  <h2>As a productive member of Vault 101, it is your duty to take the
+    Generalized Occupational Aptitude Test or G.O.A.T. for short.<br>
+    There are no right or wrong answers, simply choose whichever answer
+    most applies to you.</h2>
+<div class = "row bottom">
+  <div class = "col-xs-12 next"><button onclick = "btnNext(intro, q1)">Start</button>
+    </div>
+  </div>
+</div>
+
+<!-- Question 1 -->
+<div class = "container-fluid testContainer" id = "q1">
+
+  <div class = "question"><h1>Question 1</h1>
+    <p>You are approached by a frenzied Vault scientist, who yells, "I'm going to put my quantum harmonizer in your photonic resonation chamber!" What's your response?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a1Qs">
+        <input type = "radio" value = 1>&emsp;"But doctor, wouldn't that cause a parabolic destabilization of the fission singularity?"<br>
+        <input type = "radio" value = 3>&emsp;"Yeah? Up yours too, buddy!"<br>
+        <input type = "radio" value = 4>&emsp;Say nothing, grab a nearby pipe and hit the scientist in the head to knock him out. For all you knew, he was planning to blow up the vault.<br>
+        <input type = "radio" value = 2>&emsp;Say nothing, but slip away before the scientist can continue his rant.<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat1.jpg" alt="Mad scientist" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>1/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q1, q2, a1Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- Question 2 -->
+
+ <div class = "container-fluid testContainer" id = "q2">
+
+  <div class = "question"><h1>Question 2</h1>
+    <p>While working as an intern in the Clinic, a patient with a strange infection on his foot stumbles through the door. The infection is spreading at an alarming rate, but the doctor has stepped out for a while. What do you do?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a2Qs">
+        <input type = "radio" value = 2>&emsp;Amputate the foot before the infection spreads<br>
+        <input type = "radio" value = 3>&emsp;Scream for help<br>
+        <input type = "radio" value = 1>&emsp;Medicate the infected area to the best of your abilities<br>
+        <input type = "radio" value = 4>&emsp;Restrain the patient, and merely observe as the infection spreads<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat2.jpg" alt="Infection" `>`
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>2/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q2, q3, a2Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Question 3 -->
+
+ <div class = "container-fluid testContainer" id = "q3">
+
+  <div class = "question"><h1>Question 3</h1>
+    <p>You discover a young boy lost in the lower levels of the Vault. He's hungry and frightened, but also appears to be in possession of stolen property. What do you do?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a3Qs">
+        <input type = "radio" value = 1>&emsp;Give the boy a hug and tell him everything will be OK<br>
+        <input type = "radio" value = 3>&emsp;Confiscate the property by force, and leave him there as punishment<br>
+        <input type = "radio" value = 4>&emsp;Pick the boy's pocket to take the stolen property for yourself, and leave the boy to his fate<br>
+        <input type = "radio" value = 2>&emsp;Lead the boy to safety, then turn him over to the overseer<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat3.jpg" alt="Lost" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>3/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q3, q4, a3Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Question 4 -->
+
+ <div class = "container-fluid testContainer" id = "q4">
+
+  <div class = "question"><h1>Question 4</h1>
+    <p>Congratulations! You made one of the Vault 101 baseball teams! Which position do you prefer?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a4Qs">
+        <input type = "radio" value = 1>&emsp;Pitcher<br>
+        <input type = "radio" value = 1>&emsp;Catcher<br>
+        <input type = "radio" value = 2>&emsp;Designated Hitter<br>
+        <input type = "radio" value = 1>&emsp;None, you wish the vault had a soccer team<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat4.jpg" alt="Baseball" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>4/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q4, q5, a4Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+      <!-- Question 5 -->
+
+ <div class = "container-fluid testContainer" id = "q5">
+
+  <div class = "question"><h1>Question 5</h1>
+    <p>Your grandmother invites you to tea, but you're surprised when she gives you a pistol and orders you to kill another Vault resident. What do you do?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a5Qs">
+        <input type = "radio" value = 3>&emsp;Obey your elder and kill the Vault resident with the pistol.<br>
+        <input type = "radio" value = 1>&emsp;Offer your most prized possession for the resident's life.<br>
+        <input type = "radio" value = 4>&emsp;Ask granny for a minigun instead. After all, you don't want to miss.<br>
+        <input type = "radio" value = 2>&emsp;Throw your tea in granny's face.<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat5.jpg" alt="Granny" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>5/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q5, q6, a5Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- Question 6 -->
+
+ <div class = "container-fluid testContainer" id = "q6">
+
+  <div class = "question"><h1>Question 6</h1>
+    <p>Old Mr. Abernathy has locked himself in his quarters again, and you've been ordered to get him out. How do you proceed?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a6Qs">
+        <input type = "radio" value = 1>&emsp;Use a bobby pin to pick the lock on the door<br>
+        <input type = "radio" value = 3>&emsp;Trade a Vault hoodlum for his cherry bomb and blow open the lock.<br>
+        <input type = "radio" value = 2>&emsp;Go to the armory, retrieve a laser pistol, and blow the lock off.<br>
+        <input type = "radio" value = 4>&emsp;Just walk away and let the old coot rot.<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat6.jpg" alt="Old man" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>6/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q6, q7, a6Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Question 7 -->
+
+ <div class = "container-fluid testContainer" id = "q7">
+
+  <div class = "question"><h1>Question 7</h1>
+    <p>Oh, no! You've been exposed to radiation, and a mutated hand has grown out of your stomach! What's the best course of treatment?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a7Qs">
+        <input type = "radio" value = 3>&emsp;A bullet to the brain<br>
+        <input type = "radio" value = 1>&emsp;Large doses of anti-mutagen agent<br>
+        <input type = "radio" value = 2>&emsp;Prayer. Maybe God will spare you in exchange for a life of pious devotion.<br>
+        <input type = "radio" value = 1>&emsp;Removal of the mutated tissue with a precision laser<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat7.jpg" alt="Mutation" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>7/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q7, q8, a7Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Question 8 -->
+
+ <div class = "container-fluid testContainer" id = "q8">
+
+  <div class = "question"><h1>Question 8</h1>
+    <p>A fellow Vault 101 resident is in possession of a Grognak the Barbarian comic book, issue number 1. You want it. What's the best way to obtain it?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a8Qs">
+        <input type = "radio" value = 1>&emsp;Trade the comic book for one of your own valuable possessions<br>
+        <input type = "radio" value = 4>&emsp;Steal the comic book at gunpoint<br>
+        <input type = "radio" value = 3>&emsp;Sneak into the resident's quarters, and steal the comic book from his desk<br>
+        <input type = "radio" value = 3>&emsp;Slip some knock out drops into the resident's Nuka-Cola, and take the comic book when he's unconscious.<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat8.jpg" alt="Comic book" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>8/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q8, q9, a8Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+ <!-- Question 9 -->
+
+ <div class = "container-fluid testContainer" id = "q9">
+
+  <div class = "question"><h1>Question 9</h1>
+    <p>You decide it would be fun to play a prank on your father. You enter his private restroom when no one is looking, and...</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a9Qs">
+        <input type = "radio" value = 1>&emsp;Loosen some bolts on some pipes. When the sink is turned on, the room will flood.<br>
+        <input type = "radio" value = 4>&emsp;Put a firecracker in the toilet. That's sure to cause some chaos<br>
+        <input type = "radio" value = 3>&emsp;Break into the locked medicine cabinet and replace his high blood pressure medication with sugar pills<br>
+        <input type = "radio" value = 2>&emsp;Manipulate the power wattage on his razor, so he'll get an electric shock next time he shaves<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat9.jpg" alt="Prank" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>9/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q9, q10, a9Qs)">Next</button>
+    </div>
+  </div>
+</div>
+
+   <!-- Question 10 -->
+
+ <div class = "container-fluid testContainer" id = "q10">
+
+  <div class = "question"><h1>Question 10</h1>
+    <p>Who is indisputably the most important person in Vault 101: He who shelters us from the harshness of the atomic wasteland, and to whom we owe everything we have, including our lives?</p>
+    </div>
+
+  <div class = "row">
+    <div class = "col-xs-8 answers">
+      <form id = "a10Qs">
+        <input type = "radio" value = 0>&emsp;The Overseer<br>
+        <input type = "radio" value = 0>&emsp;The Overseer<br>
+        <input type = "radio" value = 0>&emsp;The Overseer<br>
+        <input type = "radio" value = 0>&emsp;The Overseer<br>
+      </form>
+    </div>
+    <div class = "col-xs-4 icon"><img class="img-responsive" src="images/fallout3Goat10.jpg" alt="Overseer" >
+    </div>
+    </div>
+
+  <div class = "row bottom">
+    <div class = "col-xs-6 prog"><p>10/10</p>
+    </div>
+    <div class = "col-xs-6 next"><button onclick = "btnNext(q10, results)">Next</button>
+    </div>
+  </div>
+</div>
+
+ <!-- Results -->
+
+ <div class = "container-fluid testContainer" id = "results">
+   <h1 class = "question">Results</h1>
+   <p>The purpose of this test was to evaluate your moral character. Are you ready to see your results?</p>
+   <button id = "resultBtn" onclick = "getResults()">Tell me how I did</button>
+      <p id = "result"></p>
+      <p>
+      <img src = "images/Karma1.png" class = "karma" id = "karma1">
+      <img src = "images/Karma0.png" class = "karma" id = "karma0">
+      <img src = "images/Karma-1.png" class = "karma" id = "karma-1">
+      <img src = "images/Karma-2.png" class = "karma" id = "karma-2">
+      </p>
+ </div>
+
+<script type = "text/javascript" src = "js/index.js"></script>
+
+</body>
+
+</html>

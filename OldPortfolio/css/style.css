@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+  #background {
+    background-color: black;
+    background-image: url("../images/portrait1C1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  #myName h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 769px) {
+  #background {
+    background-color: black;
+    background-image: url("../images/landscapeC1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
+  #myName h1 {
+    font-size: 90px;
+  }
+  #summary small {
+    font-size: 35px;
+  }
+}
+#myName {
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -5px;
+}
+#summary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.projects {
+  text-align: center;
+}
+.projects > div {
+  margin-bottom: 100px;
+}
+.projects img {
+  width: 100%;
+  border: 5px solid white;
+  border-radius: 5px 5px 0px 0px;
+}
+.tag {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #A5ADB7;
+  border-radius: 0px 0px 5px 5px;
+}
+.tag a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+#about {
+
+  margin-bottom: 100px;
+  background-color: rgba(165, 173, 183, 0.40);
+  border-radius: 5px;
+  color: #ffffff;
+}
+#about div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#portrait img{
+  width: 100%;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+#about h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-top: 0px;
+}
+#about p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+#footer {
+  margin-bottom: 100px;
+  background-color: rgba(165, 173, 183, 0.40);
+  border-radius: 5px;
+}
+.skills h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.skills li{
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+#contact h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+}
+#contact li {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+#phone{
+  color: white;
+}

@@ -1,0 +1,26 @@
+/* CSS definition file containing site wide stylesheets */
+
+BODY {
+	background-image: url( "../assets/images/backg-capp.jpg" );
+ 	background-attachment: fixed;
+ 	background-position: top
+}
+
+.text10pt {
+	font-family: Arial, Helvetica, Geneva, Sans-serif;
+ 	font-size: 10pt;
+ 	color: rgb(218,197,152)
+}
+
+A {
+	font-family: Arial, Helvetica, Geneva, Sans-serif;
+ 	font-size: 10pt;
+ 	color: rgb(218,197,152);
+ 	text-decoration: none 
+}
+
+A:hover {
+	font-family: Arial, Helvetica, Geneva, Sans-serif;
+ 	font-size: 10pt;
+ 	color: rgb(255,255,255)
+}

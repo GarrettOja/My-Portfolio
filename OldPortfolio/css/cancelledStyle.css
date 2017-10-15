@@ -1,0 +1,42 @@
+.about {
+  padding: 50px 100px;
+  font-family: helvetica;
+  background-color: #F2F2F2;
+  border-top: thin ridge #000000;
+  border-bottom: thin ridge #000000;
+}
+
+.portfolio {
+  margin: 75px;
+  text-align: center;
+}
+
+.nav {
+  background-color: #A9F5D0;
+  }
+
+.nav ul {
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav li a {
+  display: inline-block;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding: 5px 50px 0px 0px;
+  text-decoration: none;
+}
+nav.stick {position: fixed;
+top: 0;
+margin: 0;}
+a.nav-active {background-color: white;}

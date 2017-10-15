@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+  
+    <title>Auto Albums - Multi Level Responsive Grid</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- needed for mobile devices -->
+      
+    <style>
+        body{
+          background: url(img/bg.png); /* JUST A BACKGROUND, THIS IS NOT NEEDED AT ALL IT IS JUST FOR THE DEMO */
+        }
+    </style>
+
+    <!-- STYLE FOR FOR THE PLUGIN-->
+    <link rel="stylesheet" href="css/gridGallery.css" />  
+
+</head>
+<body>
+
+    <!-- PUT THIS HTML MARKUP WHERE YOU WANT THE GALLERY IN YOUR PAGE-->
+    <div id="grid" data-directory="Gallery"></div>
+
+    <!-- SCRIPTS FOR THE PLUGIN -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/rotate-patch.js"></script>
+    <script src="js/waypoints.min.js"></script> <!-- if you wont use the Lazy Load feature erase this line -->
+    <script src="js/autoAlbums.min.js"></script>
+
+    <script>
+      $(function(){
+            //INITALIZE THE PLUGIN
+            $('#grid').grid({
+                  imagesOrder: 'byName', //byDate, byDateReverse, byName, byNameReverse, random
+                  albumsOrder: 'none', //byDate, byDateReverse, byName, byNameReverse, random, none
+                  folderCoverRandom: true, //If there is no folderCover image then get a random image
+                  foldersAtTop: true, //If you want the folders to be always first and then the images
+                  showNumFolder: true, //If you want to show the number of folders inside a folder
+                  showNumImages: true, //If you want to show the number of images inside a folder
+                  autoHideNumFolder: true, //If there is no folders inside a folder then don't show the number of folders
+                  autoHideNumImages: false, //If there is no images inside a folder then don't show the number of images
+                  isFitWidth: true, //Nedded to be true if you wish to center the gallery to its container
+                  lazyLoad: true, //If you wish to load more images when it reach the bottom of the page
+                  showNavBar: true, //Show the navigation bar?
+                  imagesToLoadStart: 15, //The number of images to load when it first loads the grid
+                  imagesToLoad: 5, //The number of images to load when you click the load more button
+                  horizontalSpaceBetweenThumbnails: 5, //The space between images horizontally
+                  verticalSpaceBetweenThumbnails: 5, //The space between images vertically
+                  columnWidth: 'auto', //The width of each columns, if you set it to 'auto' it will use the columns instead
+                  columns: 5, //The number of columns when you set columnWidth to 'auto'
+                  columnMinWidth: 195, //The minimum width of each columns when you set columnWidth to 'auto'
+                  isAnimated: true, //Animation when resizing or filtering with the nav bar
+                  caption: true, //Show the caption in mouse over
+                  captionType: 'grid', // 'grid', 'grid-fade', 'classic' the type of caption effect
+                  lightBox: true, //Do you want the lightbox?
+                  lightboxKeyboardNav: true, //Keyboard navigation of the next and prev image
+                  lightBoxSpeedFx: 500, //The speed of the lightbox effects
+                  lightBoxZoomAnim: true, //Do you want the zoom effect of the images in the lightbox?
+                  lightBoxText: true, //If you wish to show the text in the lightbox
+                  lightboxPlayBtn: true, //Show the play button?
+                  lightBoxAutoPlay: false, //The first time you open the lightbox it start playing the images
+                  lightBoxPlayInterval: 4000, //The interval in the auto play mode 
+                  lightBoxShowTimer: true, //If you wish to show the timer in auto play mode
+                  lightBoxStopPlayOnClose: false, //Stop the auto play mode when you close the lightbox?
+                  hashTag: true, //Change the HasTag each time you navigate through albums (so you can share a single album)
+            });
+
+      });
+    </script>
+    
+</body>
+</html>

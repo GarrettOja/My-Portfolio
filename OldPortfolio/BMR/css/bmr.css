@@ -1,0 +1,29 @@
+.title {color: white;
+  background-color: #2B2833;
+  padding: 5px;
+  }
+.my-header {background-color: white;
+         text-align: center;
+  }
+.button {
+    margin-top: 30px;
+    background-color: #58D3F7;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Assistant, sans-serif;
+    font-size: 30px;
+}
+
+.services-all {background-color: #F2F2F2;
+           text-align: center;
+           border-top: thin ridge #000000;
+           border-bottom: thin ridge #000000;
+           margin-bottom: 0px;
+           }
+
+

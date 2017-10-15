@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <link rel='stylesheet prefetch' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+    body {
+      background-color: #25221F;
+    }
+    li {
+      list-style-type: none;
+    }
+    #wImg {
+      width: 75%;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .vertical-center {
+      display: flex;
+      align-items: center;
+    }
+    .icons {
+      color: white;
+    }
+    .rowMarginTop {
+      margin-top: 30px;
+    }
+    #viewport {
+      height: 30%;
+    }
+    #viewport .row {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      background-image: url(../assets/images/backg-capp.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;v
+    }
+    #gallery {
+      margin-top: 30%;
+      padding-top: 30px;
+    }
+  </style>
+  </head>
+
+
+  <body style="text-align: center;"> <!-- temporary -->
+    <div class="container-fluid navbar-fixed-top" id="viewport">
+      <div class="row vertical-center">     <!-- Make fixed to top in iFrame -->
+        <div class="col-xs-2">
+          <a onclick="back()"><h1><span class="glyphicon glyphicon-menu-left icons"></span></h1></a>
+        </div>
+        <div class="col-xs-8">
+          <ul>
+            <li id="window" value="0"><img id="wImg" src="Gallery/Auction/Lrg/0.jpg"></li>
+          </ul>
+        </div>
+        <div class="col-xs-2">
+          <a onclick="next()"><h1><span class="glyphicon glyphicon-menu-right icons"></span></h1></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="gallery">
+<!-- generateGallery() will add elements here -->
+    </div>
+
+    <script>
+
+    var imgList = [], file = "Gallery/Auction/Lrg/";
+
+    for (var i = 0; i < 300; i++) {                     /* Change limit based off number of img files -*/
+      imgList.push(file+i+'.jpg');
+    };
+
+    function back() {
+      if (document.getElementById('window').value > 0) {  /* change comparison value based off number of photos */
+        var value = document.getElementById('window').value;
+        value--;
+        document.getElementById('wImg').src = imgList[value];
+        document.getElementById('window').value = value;
+      };
+    };
+
+    function next() {
+      if (document.getElementById('window').value < 253) {  /* change comparison value based off number of photos (total number of photos -1)*/
+        var value = document.getElementById('window').value;
+        value++;
+        document.getElementById('wImg').src = imgList[value];
+        document.getElementById('window').value = value;
+      };
+    };
+
+    function display(x) {
+      var old = document.getElementById(x).src;
+      var filepath = old.replace('Thumbs', 'Lrg');
+      filepath = filepath.replace('thumbs', '');
+      document.getElementById('wImg').src = filepath;
+      document.getElementById('window').value = x;
+    };
+
+    function generateGallery() {
+      var row, newRow, i, iC = 0 /* Img Count */, img;
+
+/* Function to create new row elements */
+      function createRow(i) {
+        newRow = "<div id='r"+i+"' class='row rowMarginTop'></div>";
+        row = newRow;
+      };
+
+/* Function to create new img elements */       /* Use ' ' to contain HTML code */
+      function newImg() {
+        img = "<div class='col-xs-3'><img id="+iC+" onclick='display("+iC+")' src='Gallery/Auction/Thumbs/thumbs"+iC+".jpg'></div>";
+        $("#r"+i).append(img);
+        iC++;
+      };
+
+/* Loop to create 4 img elements per row */
+      function imgLoop() {
+        for (var a = 0; a < 4; a++) {
+          newImg();
+        };
+      };
+
+/* Put it all together */
+        for (i = 0; i < 64; i++) {    /* Divide total number of images by 4 for end of loop number */
+          createRow(i);
+          $("#gallery").append(row);
+          imgLoop();
+        };
+        $("#254, #255").remove();
+    };
+
+    generateGallery();
+
+    </script>
+  </body>
+  </html>

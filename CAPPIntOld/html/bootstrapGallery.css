@@ -1,0 +1,75 @@
+.galleryBack {
+  background-color: #25221F;
+}
+li {
+  list-style-type: none;
+}
+#wImg {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
+}
+.galleryBody img {
+  width: 200px;
+  height: auto;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  padding: 15px;
+  background-color: #f45844;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.rowMarginTop {
+  margin-top: 30px;
+}
+.dSplit {
+  width: 100%;
+  height: 1000px;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#viewport {
+  width: 100%
+  height: 100%;
+}
+#viewport .row {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-image: url(../assets/images/backg-capp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Classes for modal */
+
+.modal-fullscreen .modal-window {
+  position: absolute;
+  z-index: 99;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-window {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-window {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-window {
+     width: 1170px;
+  }
+}

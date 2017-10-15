@@ -1,0 +1,3 @@
+ var data_validation = '{"fb-submit-button":{"hover":{"background-image":"url(common/images/submit2.gif)"}},"item2_textarea_1":{"maxlength":"10000","required":true,"messages":"Comments are required"},"item3_text_1":{"required":true,"messages":"Name is required"},"item5_tel_1":{"phoneUS":true},"item6_email_1":{"email":true,"required":true,"messages":"Email address is required"}}';
+ var data_jsplugins = '[]';
+ var data_cssplugins = '[]';

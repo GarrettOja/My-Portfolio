@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+.testContainer {
+  display: none;
+  width: 85%;
+  height: 400px;
+  margin-top: 100px;
+  box-shadow: 0 0 30px green;
+  color: green;
+  font-family: Courier;
+  position: relative;
+}
+
+.bottom {
+  width: 100%;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+  bottom: 15px;
+}
+
+.prog {
+  text-align: left;
+}
+
+.next {
+  text-align: right;
+}
+
+.question p {
+  font-size: 20px;
+}
+
+form {
+  font-size: 17px;
+}
+
+.icon img {
+  box-shadow: 0 0 50px green;
+}
+
+#resultBtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.karma {
+  display: none;
+  border-style: none;
+}

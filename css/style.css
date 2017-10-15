@@ -1,0 +1,70 @@
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mdl-card__actions {
+  text-align: center;
+
+}
+.mdl-card__media img {
+  width: 100%;
+  height: auto;
+}
+.mdl-card a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+#home {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: inherit;
+}
+.pNames {
+  text-align: center;
+}
+.mdl-card__fullWidth {
+  width: 100%;
+}
+.fullWidth {
+  width: 100%;
+}
+.limitWidth {
+  max-width: 960px;
+}
+#phoneContent {
+  display: none;
+}
+.titlePrimary {
+  color: #FFFFFF;
+  background-color: #607D8B;
+}
+.titleAccent {
+  background-color: #EEFF41;
+}
+.secondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.alert {
+  color: red;
+}
+.success {
+  color: green;
+}
+/*
+#skills {
+  display: none;
+}
+#preferred {
+  display: none;
+}
+#contact {
+  display: none;
+}
+*/
+.back {
+color: inherit;
+text-decoration: inherit;
+font-weight: inherit;
+}
