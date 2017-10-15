@@ -1,0 +1,254 @@
+@media (max-width: @screen-xs) {
+    body {font-size: 10px;
+    }
+}
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+
+
+body {
+  background-color: #FAFAFA;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.text {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h3 {
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#headerBackground {
+  background-image: url("../images/homeBack.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-color: black;
+  background-size: cover;
+  width: 100%;      /* Hack to make backgroundimg behave like <img> */
+    height: 0;
+    padding-top: 40.25%;    /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) = 66.64%*/
+  position: relative;
+}
+#header {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+#navigation {
+  width: 20%;
+  background-color: rgba(2, 136, 209, .6);
+  padding-right: 0px;
+}
+#logo img {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#social {
+  margin-top: 15px;
+}
+#social li a {
+    padding: 3px 0px 3px 15px;
+    text-decoration: none;
+    color: white;
+}
+#social a:hover {
+  color: #0288D1;
+}
+#navlinks {
+  font-family: 'Open Sans', sans-serif;
+}
+#navLinks a {
+  font-size: 1.25em;
+  color: white;
+}
+#navLinks .active {
+  background-color: #0288D1;
+}
+#navLinks a:hover {
+  background-color: #29B6F6;
+}
+#aboutUs {
+  display: block;
+}
+#aboutUs img {
+  border-radius: 50%;
+  text-align: center;
+  width: 100%;
+}
+#ourDoctors {
+
+}
+.topMargins {
+  margin-top: 30px;
+}
+#aboutDrSteph {
+  display: none;
+}
+#drStephimg {
+  border-radius: 50%;
+  text-align: center;
+  width: 100%;
+}
+#aboutDrPerry {
+  display: none;
+}
+#drPerryimg {
+  border-radius: 50%;
+  text-align: center;
+  width: 100%;
+}
+#introNav {
+  width: auto;
+  margin-bottom: 30px;
+}
+#ourPhilosophy {
+  background-color: #29B6F6;
+}
+#philosophy {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#philosophy h1 {
+  color: rgba(255,255,255, 0.9);
+}
+#philosophy h4 {
+  color: rgba(255,255,255, 0.8);
+}
+#contactSection {
+  background-color: #FAFAFA;
+}
+
+.contactBlock {
+  background-color: #E1F5FE;
+  border-radius: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+.btn-default {
+  background-color: #00C853;
+  color: white;
+  text-decoration-color: white;
+  border: none;
+}
+.btn-default:hover {
+  background-color: #00C853;
+}
+.btn-default:focus {
+  background-color: #00C853;
+}
+.title {
+  padding: 15px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #0288D1;
+  color: rgba(255,255,255, 0.9);
+}
+.content {
+  margin-top: 15px;
+  padding: 0px 15px 15px 15px;
+}
+.content p {
+  font-size: 1.1em;
+}
+.contactTitle {
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  margin: 15px auto 30px auto;
+  padding: 5px;
+}
+.margin-top-bottom-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.ccMargins {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contactCard {
+  background-color: #29B6F6;
+  padding: 10px;
+  border-radius: 15px;
+}
+#contactLink {
+  margin-top: 15px;
+  padding: 5px 5px 5px 5px;
+}
+#contactLink h4 {
+  margin: 0px;
+}
+.bold {
+  font-weight: bold;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+#form {                         /*Add media query*/
+  display: none;
+  width:100%;
+  height:100%;
+  opacity:.95;
+  top:0;
+  left:0;
+  display:none;
+  position:fixed;
+  background-color:#313131;
+  overflow:auto
+}
+#formBody {
+  position:absolute;
+  left:50%;
+  top:17%;
+  margin-left:-202px;
+  max-width: 400px;
+  background-color: white;
+}
+#formTitle {
+  padding: 5px 5px 5px 5px;
+  background-color: #0288D1;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+#form1 form {
+  padding: 25px 15px 5px 15px;
+}
+#formButtons {
+  margin-top: 15px;
+  text-align: center;
+}
+#submit {
+  margin-right: 10px;
+}
+#close {
+  color: black;
+}
+#footer {
+  background-color: #29B6F6;
+  text-align: center;
+  padding: 15px;
+}
+#footer .logo{
+  height: 150px;
+  width: auto;
+}
